@@ -1,0 +1,106 @@
+\usepackage{appendixnumberbeamer}
+% \usecolortheme{crane} # Määritä vaihtoehtoinen väriteema
+
+% ----------------------
+% ----------------------
+% kustom-fonttiasetukset
+
+%% fontin tyyppi
+
+\setsansfont{Fira Sans Condensed}
+\setmonofont{Fira Sans}
+
+%% fontin koot
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{section title}{size=\Large, series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{block title alerted}{size=\normalsize,series=\bfseries}
+\setbeamerfont*{subtitle}{size=\small}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamerfont{caption name}{series=\bfseries}
+\setbeamerfont{description item}{series=\bfseries}
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamerfont{bibliography entry author}{size=\normalsize,series=\normalfont}
+\setbeamerfont{bibliography entry title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{bibliography entry location}{size=\normalsize,series=\normalfont}
+\setbeamerfont{bibliography entry note}{size=\small,series=\normalfont}
+\setbeamerfont{standout}{size=\huge,series=\bfseries}
+
+% ----------------------
+
+% Define new barometri environments
+%% http://tex.stackexchange.com/questions/286084/how-to-rename-or-copy-a-latex-environment
+
+\newenvironment{tabular_tiny}{\tabular}{\endtabular}
+\newenvironment{tabular_scriptsize}{\tabular}{\endtabular}
+\newenvironment{tabular_footnotesize}{\tabular}{\endtabular}
+
+\newenvironment{tabularx_tiny}{\tabularx}{\endtabularx}
+\newenvironment{tabularx_scriptsize}{\tabularx}{\endtabularx}
+\newenvironment{tabularx_footnotesize}{\tabularx}{\endtabularx}
+
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{tabular_tiny}{\tiny}
+\AtBeginEnvironment{tabular_scriptsize}{\scriptsize}
+\AtBeginEnvironment{tabular_footnotesize}{\footnotesize}
+
+\AtBeginEnvironment{tabularx_tiny}{\tiny}
+\AtBeginEnvironment{tabularx_scriptsize}{\scriptsize}
+\AtBeginEnvironment{tabularx_footnotesize}{\footnotesize}
+
+% \AtBeginEnvironment{tabularx}{\scriptsize}
+
+
+\setkeys{Gin}{width=.8\textwidth}
+
+\newcommand{\questiontitle}[1]{\small\textbf{#1}\\ \normal}
+\newcommand{\questiondef}[1]{\small\textit{#1}\\ \normal}
+
+\newcommand{\questiontitlesmall}[1]{\small\textbf{#1}\\ \normal}
+\newcommand{\questiondefsmall}[1]{\small\textit{#1}\\ \normal}
+
+\newcommand{\questiontitlefootnotesize}[1]{\footnotesize\textbf{#1}\\ \normal}
+\newcommand{\questiondeffootnotesize}[1]{\footnotesize\textit{#1}\\ \normal}
+
+\newcommand{\questiontitletiny}[1]{\tiny\textbf{#1}\\ \normal}
+\newcommand{\questiondeftiny}[1]{\tiny\textit{#1}\\ \normal}
+
+
+\usepackage{tabularx} % in the preamble
+\newcolumntype{b}{X}
+\newcolumntype{d}{>{\centering\arraybackslash\hsize=.5\hsize}X}
+
+
+% \newcommand{\colhead}[1]{\textbf{\tiny{#1}}} # sarakeotsikoihin
+% \hyphenation{Tutkimus-osasto Keskus-hallinto} % http://www.forkosh.com/latex/ltx-244.html % tavutus taulukossa
+
+% \let\includegraphicswholepage\includegraphics
+% \renewcommand{\includegraphics}[2][]{\includegraphicswholepage[width=0.8\textwidth,#1]{#2}}
+
+\titlegraphic{\hfill\includegraphics[height=1cm]{stuff/logo.pdf}}
+
+\usepackage{booktabs}
+\usepackage[scale=1]{ccicons}
+
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+% ----------------------
+% Kela-värit
+\definecolor{mDarkBrown}{HTML}{A0420D}
+\definecolor{mDarkTeal}{HTML}{006F84}
+\definecolor{mLightBrown}{HTML}{FDB916}
+\definecolor{mLightGreen}{HTML}{C0D730}
+% ----------------------
+
+
+% linkit
+\definecolor{links}{HTML}{009CDB}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+

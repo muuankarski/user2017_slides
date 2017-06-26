@@ -1,0 +1,36 @@
+---
+author: "\\textbf{Markus Kainu} \\newline \\href{https://ropengov.github.io}{ropengov.github.io} \\newline \\href{http://www.kela.fi/web/en/contact-us-research}{The Social Insurance Institution of Finland}" 
+title: "Community-based learning and knowledge sharing"
+subtitle: Can we replace the skills or should we replace the people? 
+date: "2016-07-01"
+output:
+  beamer_presentation:
+    keep_tex: no
+    theme: metropolis
+    latex_engine: xelatex
+    slide_level: 2
+    incremental: no
+    includes:
+      in_header: stuff/header.tex
+fontsize: 12pt
+classoption: compress
+---
+
+```{r,setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE)
+```
+
+
+# I Theory
+
+
+## And this is a regular slide with header?!
+
+
+
+
+
+# II Practise
+
+
+## 
