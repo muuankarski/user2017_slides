@@ -27,38 +27,51 @@ knitr::opts_chunk$set(cache=TRUE)
 >..we introduce these R-based teaching tools and summarize our practical experiences on the various pedagogical aspects, opportunities, and challenges of community-based learning and knowledge sharing enabled by the R ecosystem. Based on our combined experience from universities, research institutes, and the public sector, we summarize key ingredients for teaching of modern data science. 
 
 
-# I Where do we stand? 
 
-## R is increasingly used..
+# Set up
+
+## Why learning R
 
 - to teach programming, quantitative analytics, and reproducible research practices. 
+
+## Various ways to learn R
+
 - Learning to program has already been greatly facilitated by initiatives such as Data Carpentry and Software Carpentry, and educational resources have been developed by the users, including domain specific tutorial collections and training materials [@Kamvar2017; @Lahti2017; @Afanador2017]. 
-- An essential pedagogical feature of R is that it enables a problem-centered, interactive learning approach. Even programming-naive learners can, in our experience, rapidly adopt practical skills by analyzing topical example data sets supported by ready-made Rmarkdown templates; these can provide an immediate starting point to expose the learners to some of the key tools and best practices [@Wilson2016]. 
+
+## Various audiences learning R
+
 - However, many aspects of learning R are still better appreciated by advanced users; such as harnessing the full potential of open collaboration model by joint development of custom R packages, report templates, shiny-modules, or database functions that enables rapid development of solutions catering specific practical needs. 
+
+
+## Common bottlenecks in learning R
+
+- An essential pedagogical feature of R is that it enables a problem-centered, interactive learning approach. Even programming-naive learners can, in our experience, rapidly adopt practical skills by analyzing topical example data sets supported by ready-made Rmarkdown templates; these can provide an immediate starting point to expose the learners to some of the key tools and best practices [@Wilson2016]. 
 - Indeed, at all levels of learning, getting things done fast, appears to be an essential component for successful learning as it provides instant rewards and helps to put the acquired skills into immediate use. 
- 
 
-## The diverse needs..
+The diverse needs of different application domains pose a great challenge for crafting common guidelines and materials, however. Leveraging the existing experience within the learning community can greatly support the learning process as it helps to ensure the domain specificity and relevance of the teaching experience. 
 
->.. of different application domains pose a great challenge for crafting common guidelines and materials, however. Leveraging the existing experience within the learning community can greatly support the learning process as it helps to ensure the domain specificity and relevance of the teaching experience. 
+This can be supported by peer support and knowledge sharing; some ways to achieve this include code review, show-and-tell culture, informal meetings, online channels (e.g. Slack, IRC, Facebook) and hackathons. 
 
-## This can actively promoted..
-
->..by peer support and knowledge sharing; some ways to achieve this include code review, show-and-tell culture, informal meetings, online channels (e.g. Slack, IRC, Facebook) and hackathons. 
-
-## Last but not least..
-
->..having fun throughout the learning process is essential; gamification of assignments with real-time rankings or custom functions performing non-statistical operations like emailing gif images can raise awareness of how R as a full-fledged programming language differs from proprietary statistical packages. 
+- Last but not least having fun throughout the learning process is essential; gamification of assignments with real-time rankings or custom functions performing non-statistical operations like emailing gif images can raise awareness of how R as a full-fledged programming language differs from proprietary statistical packages. 
 
 
+# I - R package Edu 
 
 
-## In order to meet these..
+- In order to meet these demands, we designed specific open infrastructure to support learning in R. Our infrastructure gathers a set of modules to construct domain spesific assignments for various phases of data analysis. The assignments are coupled with automated evaluation and scoring routines that provide instant feedback during learning. 
 
->..demands, we designed specific open infrastructure to support learning in R. Our infrastructure gathers a set of modules to construct domain spesific assignments for various phases of data analysis. The assignments are coupled with automated evaluation and scoring routines that provide instant feedback during learning. 
+## Overivew
+
+## Creating assignments
+
+This packages provides an Rstudio addin for creating assignments for students with simple R exercises. See vignette: [creating assignments](https://ropengov.github.io/edu/articles/a_creating_assignments.html). 
 
 
-# 
+## Assessing assgnments
 
+In addition to creating assignments, there is also simple script for processing the completed assignments collected from students into a single script accompanied with the correct answers. See vignette: [assessing assignments](https://ropengov.github.io/edu/articles/b_assessing_assignments.html)
 
-## 
+## Manipulating exercises
+
+You can use the pre-existing exercises covering multiple themes or you can easily create your own spesific to your organization. Package also has a simple support for different languages. See vignette: [manipulating exercises](https://ropengov.github.io/edu/articles/c_manipulating_exercises.html)
+
