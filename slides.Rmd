@@ -13,10 +13,8 @@ output:
     includes:
       in_header: files/header.tex
 fontsize: 10pt
-#classoption: compress
+classoption: compress
 ---
-
-
 
 ## rOpenGov
 
